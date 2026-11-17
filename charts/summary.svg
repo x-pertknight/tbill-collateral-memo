@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" font-family="Helvetica, Arial, sans-serif">
 <rect width="1080" height="1350" fill="white"/>
-<text x="60" y="110" font-size="62" fill="#1c1c1c" text-anchor="start" font-weight="bold">TBILL can’t yet be</text>
+<text x="60" y="110" font-size="62" fill="#1c1c1c" text-anchor="start" font-weight="bold">What TBILL needs to be</text>
 <text x="60" y="182" font-size="62" fill="#1c1c1c" text-anchor="start" font-weight="bold">collateral on Morpho</text>
 <text x="60" y="236" font-size="28" fill="#555555" text-anchor="start" font-weight="normal">OpenEden TBILL, data as of 16 November 2026</text>
 <text x="60" y="320" font-size="44" fill="#1c1c1c" text-anchor="start" font-weight="bold">The token only moves between</text>

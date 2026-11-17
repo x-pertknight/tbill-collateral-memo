@@ -44,7 +44,7 @@ def build():
     w, h, m = 1080, 1350, 60
     p = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" font-family="Helvetica, Arial, sans-serif">',
          f'<rect width="{w}" height="{h}" fill="white"/>',
-         text(m, 110, "TBILL can’t yet be", 62, INK, weight="bold"), text(m, 182, "collateral on Morpho", 62, INK, weight="bold"),
+         text(m, 110, "What TBILL needs to be", 62, INK, weight="bold"), text(m, 182, "collateral on Morpho", 62, INK, weight="bold"),
          text(m, 236, f"OpenEden TBILL, data as of {as_of}", 28, SOFT)]
     # section 1: the rule
     p += [text(m, 320, "The token only moves between", 44, INK, weight="bold"), text(m, 372, "approved addresses", 44, INK, weight="bold")]

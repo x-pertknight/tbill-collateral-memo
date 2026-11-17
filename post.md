@@ -1,8 +1,8 @@
-OpenEden's TBILL token cannot yet be collateral on Morpho. The issuer's approved list is only the first reason.
+What it would take for OpenEden's TBILL to become collateral on Morpho. The token moves only between addresses the issuer approves, and Morpho's contract is not on that list yet.
 
 What the token is
 
-TBILL is a token backed by short-dated US Treasury bills. It can only move between addresses the issuer has approved. Redemptions go through a queue worked in order.
+TBILL is a token backed by short-dated US Treasury bills. Redemptions go through a queue worked in order.
 
 The rule that decides it
 
@@ -12,9 +12,9 @@ What the record shows
 
 Across Ethereum and BNB Chain, supply grew from about 69 million tokens in May 2026 to about 235 million now. On Ethereum alone it is about 90% below its August 2025 peak. More than half of that fall matches a same-size mint on BNB Chain. Of the redemption requests since December 2024, 200 could be matched to payouts, and all settled by the next US business day, as the issuer's documents say is typical.
 
-What it would take
+The conditions
 
-The issuer's list would have to include Morpho's lending contract and at least three independent parties who take over bad loans. That is necessary and not sufficient. The issuer can also remove an address later, so a lender should be ready to lose a loan in full.
+The issuer's list would have to include Morpho's lending contract and at least three independent parties who take over bad loans. That is necessary and not sufficient. The issuer can also remove an address later, so a lender should size each loan for that risk.
 
 Limits
 
