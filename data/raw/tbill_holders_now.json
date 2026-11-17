@@ -1,0 +1,65 @@
+{
+ "head_block": 26430075,
+ "rows": [
+  {
+   "balance": 301911710000,
+   "holder": "TBILL vault/token (proxy)",
+   "is_contract": true
+  },
+  {
+   "balance": 107470607279,
+   "holder": "addr_0036",
+   "is_contract": false
+  },
+  {
+   "balance": 871516115418,
+   "holder": "addr_0062",
+   "is_contract": false
+  },
+  {
+   "balance": 4036463923869,
+   "holder": "addr_0074",
+   "is_contract": false
+  },
+  {
+   "balance": 1007614388293,
+   "holder": "addr_0085",
+   "is_contract": true
+  },
+  {
+   "balance": 9408956364084,
+   "holder": "addr_0094",
+   "is_contract": false
+  },
+  {
+   "balance": 612773072114,
+   "holder": "addr_0120",
+   "is_contract": false
+  },
+  {
+   "balance": 59178430326,
+   "holder": "addr_0133",
+   "is_contract": false
+  },
+  {
+   "balance": 86598502656,
+   "holder": "addr_0140",
+   "is_contract": false
+  },
+  {
+   "balance": 294851093084,
+   "holder": "addr_0142",
+   "is_contract": false
+  },
+  {
+   "balance": 86422460430,
+   "holder": "addr_0144",
+   "is_contract": false
+  },
+  {
+   "balance": 293849864733,
+   "holder": "addr_0145",
+   "is_contract": true
+  }
+ ]
+}

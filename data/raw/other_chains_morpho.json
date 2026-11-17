@@ -1,0 +1,11 @@
+{
+ "bnb_morpho_blue": {
+  "isBanned": "false",
+  "isKyc": "false"
+ },
+ "markets_with_tbill_collateral": {
+  "Arbitrum": 0,
+  "BNB Chain": 0,
+  "Ethereum": 0
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "EUTBL": {
+  "authority": "0x344278aff344d6fb960705dc18a4912221608472",
+  "control_dead_address_allowed": "false",
+  "decimals": "5",
+  "morpho_blue_allowed": "true",
+  "paused": "false",
+  "rule": "_update requires authority.canCall(account, token, transfer) for sender and receiver",
+  "symbol": "\"EUTBL\"",
+  "totalSupply_raw": "2043831051733"
+ },
+ "USCC": {
+  "allowlist": "0xBcBC2b4FB2AbE1C598C9ea91E0b03338e4728D1f",
+  "control_dead_address_allowed": "false",
+  "decimals": "6",
+  "isPublicInstrument": "false",
+  "morpho_blue_allowed": "true",
+  "paused": "false",
+  "rule": "transfer/transferFrom require isAllowed(sender) and isAllowed(receiver)",
+  "symbol": "\"USCC\"",
+  "totalSupply_raw": "4066680133168"
+ },
+ "issuer_defi_tokens": {
+  "USDO": {
+   "bonusMultiplier": "1067111780821917568",
+   "decimals": "18",
+   "morpho_blue_isBanned": "false",
+   "paused": "false",
+   "symbol": "\"USDO\"",
+   "totalSupply_raw": "12571869386993553730185070"
+  },
+  "cUSDO": {
+   "decimals": "18",
+   "paused": "false",
+   "symbol": "\"cUSDO\"",
+   "totalSupply_raw": "9602946617785013243339155"
+  },
+  "rule": "transfer reverts only if sender is on the ban list or the contract is paused; no KYC check on either side",
+  "usdo_market_oracle": {
+   "BASE_FEED_1": "0x0000000000000000000000000000000000000000",
+   "BASE_VAULT": "0xaD55aebc9b8c03FC43cd9f62260391c13c23e7c0",
+   "address": "0x26Be0B9fDAF2855428DEee155b195eE802144ACD",
+   "price": "1066995017935000000000000"
+  }
+ },
+ "nav_feeds": {
+  "EUTBL NAV feed": {
+   "decimals": "6",
+   "description": "\"EUTBL",
+   "latestRoundData": [
+    "18446744073709552390 [1.844e19]",
+    "1063078 [1.063e6]",
+    "1794851764 [1.794e9]",
+    "1794851783 [1.794e9]",
+    "18446744073709552390 [1.844e19]"
+   ]
+  },
+  "USCC NAV feed": {
+   "decimals": "6",
+   "description": "\"USCC",
+   "latestRoundData": [
+    "18446744073709552396 [1.844e19]",
+    "11828822 [1.182e7]",
+    "1794835749 [1.794e9]",
+    "1794835763 [1.794e9]",
+    "18446744073709552396 [1.844e19]"
+   ]
+  }
+ }
+}

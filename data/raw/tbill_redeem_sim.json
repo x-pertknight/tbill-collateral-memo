@@ -1,0 +1,58 @@
+{
+ "block": 26429976,
+ "nav_raw": 1163489,
+ "rows": [
+  {
+   "redeemIns": {
+    "ok": false,
+    "output": "Error: server returned an error response: error code 3: execution reverted: Not asset holder, data: \"0x08c379a0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000104e6f7420617373657420686f6c64657200000000000000000000000000000"
+   },
+   "redeem_queue": {
+    "ok": true,
+    "output": "0x"
+   },
+   "sender_balance_ok": true,
+   "shares": 859483845,
+   "usd": 1000
+  },
+  {
+   "redeemIns": {
+    "ok": false,
+    "output": "Error: server returned an error response: error code 3: execution reverted: Not asset holder, data: \"0x08c379a0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000104e6f7420617373657420686f6c64657200000000000000000000000000000"
+   },
+   "redeem_queue": {
+    "ok": true,
+    "output": "0x"
+   },
+   "sender_balance_ok": true,
+   "shares": 8594838455,
+   "usd": 10000
+  },
+  {
+   "redeemIns": {
+    "ok": false,
+    "output": "Error: server returned an error response: error code 3: execution reverted: Not asset holder, data: \"0x08c379a0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000104e6f7420617373657420686f6c64657200000000000000000000000000000"
+   },
+   "redeem_queue": {
+    "ok": true,
+    "output": "0x"
+   },
+   "sender_balance_ok": true,
+   "shares": 85948384557,
+   "usd": 100000
+  },
+  {
+   "redeemIns": {
+    "ok": false,
+    "output": "Error: server returned an error response: error code 3: execution reverted: Not asset holder, data: \"0x08c379a0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000104e6f7420617373657420686f6c64657200000000000000000000000000000"
+   },
+   "redeem_queue": {
+    "ok": true,
+    "output": "0x"
+   },
+   "sender_balance_ok": true,
+   "shares": 859483845571,
+   "usd": 1000000
+  }
+ ]
+}

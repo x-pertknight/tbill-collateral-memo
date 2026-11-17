@@ -1,0 +1,109 @@
+{
+ "balances_raw": {
+  "opltreasury_usdc": "1233354394",
+  "qtreasury_usdc": "5859955",
+  "redemption_usdc": "0",
+  "treasury_usdc": "0",
+  "vault_buidl": "0",
+  "vault_usdc": "692583"
+ },
+ "block": 26429959,
+ "controller": {
+  "pausedDeposit": "false",
+  "pausedWithdraw": "false"
+ },
+ "fees": {
+  "first_deposit_usdc_raw": "100000000000",
+  "management_fee_rate_bps": "35",
+  "min_max_withdraw_raw": [
+   "1000000 [1e6]",
+   "25000000000000 [2.5e13]"
+  ],
+  "tx_fee_deposit_weekend_false": "5",
+  "tx_fee_deposit_weekend_true": "10",
+  "tx_fee_withdraw_weekend_false": "5",
+  "tx_fee_withdraw_weekend_true": "10"
+ },
+ "fetched_at_unix": 1794860638,
+ "kyc": {
+  "isStrict": "true",
+  "morpho_blue_isBanned": "false",
+  "morpho_blue_isKyc": "false"
+ },
+ "oracle": {
+  "closeNavPrice": "116337605",
+  "decimals": "8",
+  "latestRound": "1229",
+  "latestRoundData": [
+   "1229",
+   "116348989 [1.163e8]",
+   "1794787931 [1.794e9]",
+   "1794787931 [1.794e9]",
+   "1229"
+  ],
+  "maxPriceDeviation": "5"
+ },
+ "redemption": {
+  "asset": "0x7712c34205737192402172409a8F7ccef8aA2AEc",
+  "liquidity": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+  "owner_type": {
+   "code_bytes": 0,
+   "type": "single key (no contract code)"
+  },
+  "paused": "false",
+  "pauser_type": {
+   "code_bytes": 0,
+   "type": "single key (no contract code)"
+  },
+  "settlement": "0x57Dd4E92712b0fBC8d3f3e3645EebCf2600aCef0"
+ },
+ "roles": {
+  "fee_manager_owner": {
+   "code_bytes": 171,
+   "signers": 5,
+   "threshold": 4,
+   "type": "Safe multisig"
+  },
+  "kyc_manager_owner": {
+   "code_bytes": 171,
+   "signers": 4,
+   "threshold": 3,
+   "type": "Safe multisig"
+  },
+  "maintainer": {
+   "code_bytes": 171,
+   "signers": 5,
+   "threshold": 4,
+   "type": "Safe multisig"
+  },
+  "owner": {
+   "code_bytes": 7717,
+   "min_delay_s": 86400,
+   "type": "timelock"
+  },
+  "qTreasury": {
+   "code_bytes": 171,
+   "signers": 4,
+   "threshold": 3,
+   "type": "Safe multisig"
+  }
+ },
+ "vault": {
+  "controller": "0x377de6729507Bb0E56E0AAC666bd8522E4A3fe41",
+  "decimals": "6",
+  "feeManager": "0x99C913B3cBDdCFC7eD49Ff19B00704286a4B3b6B",
+  "getWithdrawalQueueLength": "3",
+  "kycManager": "0x51Be497AcEd1a2C19f6151064301e356B020D947",
+  "maintainer": "0x8Ec4dD2DF01c188Ac5a5D870029E9cbb820d5844",
+  "oplTreasury": "0x26C02c2A483130baF43AE77C859242DB39c55BED",
+  "owner": "0x6E8559Afd41f8f9971828AA8B0C25b65cA6a5567",
+  "qTreasury": "0x7566A094651CC826D99B57b3046EaB156269e94C",
+  "redemptionContract": "0x31D3F59Ad4aAC0eeE2247c65EBE8Bf6E9E470a53",
+  "tbillUsdPriceFeed": "0xCe9a6626Eb99eaeA829D7fA613d5D0A2eaE45F40",
+  "tbillUsdcRate": "1163489",
+  "totalAssets": "19974321356642",
+  "totalSupply": "17167606532286",
+  "totalSupplyCap": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+  "treasury": "0xdF596281875feB7837351c70D11F2338c7e45435"
+ }
+}

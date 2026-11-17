@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" font-family="Helvetica, Arial, sans-serif">
+<rect width="1080" height="1350" fill="white"/>
+<text x="60" y="110" font-size="62" fill="#1c1c1c" text-anchor="start" font-weight="bold">TBILL can’t yet be</text>
+<text x="60" y="182" font-size="62" fill="#1c1c1c" text-anchor="start" font-weight="bold">collateral on Morpho</text>
+<text x="60" y="236" font-size="28" fill="#555555" text-anchor="start" font-weight="normal">OpenEden TBILL, data as of 16 November 2026</text>
+<text x="60" y="320" font-size="44" fill="#1c1c1c" text-anchor="start" font-weight="bold">The token only moves between</text>
+<text x="60" y="372" font-size="44" fill="#1c1c1c" text-anchor="start" font-weight="bold">approved addresses</text>
+<rect x="60" y="405" width="300" height="150" fill="white" stroke="#9aa3ad" stroke-width="5"/>
+<text x="210.0" y="447" font-size="26" fill="#1c1c1c" text-anchor="middle" font-weight="bold">Borrower</text>
+<text x="210.0" y="479" font-size="26" fill="#1c1c1c" text-anchor="middle" font-weight="bold"></text>
+<text x="210.0" y="537" font-size="56" fill="#9aa3ad" text-anchor="middle" font-weight="bold">?</text>
+<text x="210.0" y="593" font-size="24" fill="#4a535c" text-anchor="middle" font-weight="bold">would need to</text>
+<text x="210.0" y="623" font-size="24" fill="#4a535c" text-anchor="middle" font-weight="bold">be approved</text>
+<rect x="390" y="405" width="300" height="150" fill="white" stroke="#d9822b" stroke-width="5"/>
+<text x="540.0" y="447" font-size="26" fill="#1c1c1c" text-anchor="middle" font-weight="bold">Morpho’s</text>
+<text x="540.0" y="479" font-size="26" fill="#1c1c1c" text-anchor="middle" font-weight="bold">lending contract</text>
+<line x1="524.0" y1="501" x2="556.0" y2="533" stroke="#d9822b" stroke-width="8" stroke-linecap="round"/>
+<line x1="524.0" y1="533" x2="556.0" y2="501" stroke="#d9822b" stroke-width="8" stroke-linecap="round"/>
+<text x="540.0" y="593" font-size="24" fill="#d9822b" text-anchor="middle" font-weight="bold">not on the</text>
+<text x="540.0" y="623" font-size="24" fill="#d9822b" text-anchor="middle" font-weight="bold">issuer’s list</text>
+<rect x="720" y="405" width="300" height="150" fill="white" stroke="#d9822b" stroke-width="5"/>
+<text x="870.0" y="447" font-size="26" fill="#1c1c1c" text-anchor="middle" font-weight="bold">Whoever takes</text>
+<text x="870.0" y="479" font-size="26" fill="#1c1c1c" text-anchor="middle" font-weight="bold">over a bad loan</text>
+<line x1="854.0" y1="501" x2="886.0" y2="533" stroke="#d9822b" stroke-width="8" stroke-linecap="round"/>
+<line x1="854.0" y1="533" x2="886.0" y2="501" stroke="#d9822b" stroke-width="8" stroke-linecap="round"/>
+<text x="870.0" y="593" font-size="24" fill="#d9822b" text-anchor="middle" font-weight="bold">none of 8 tested</text>
+<text x="870.0" y="623" font-size="24" fill="#d9822b" text-anchor="middle" font-weight="bold">is on the list</text>
+<text x="60" y="700" font-size="44" fill="#1c1c1c" text-anchor="start" font-weight="bold">Supply grew across chains</text>
+<text x="60" y="810" font-size="76" fill="#2a6fb0" text-anchor="start" font-weight="bold">69M → 235M</text>
+<text x="60" y="858" font-size="27" fill="#1c1c1c" text-anchor="start" font-weight="normal">Ethereum and BNB Chain together,</text>
+<text x="60" y="892" font-size="27" fill="#1c1c1c" text-anchor="start" font-weight="normal">May 2026 to now</text>
+<text x="560" y="810" font-size="96" fill="#d9822b" text-anchor="start" font-weight="bold">−90%</text>
+<text x="560" y="858" font-size="27" fill="#1c1c1c" text-anchor="start" font-weight="normal">Ethereum alone, from its</text>
+<text x="560" y="892" font-size="27" fill="#1c1c1c" text-anchor="start" font-weight="normal">August 2025 peak</text>
+<text x="60" y="1010" font-size="44" fill="#1c1c1c" text-anchor="start" font-weight="bold">Redemptions</text>
+<text x="60" y="1120" font-size="84" fill="#2a6fb0" text-anchor="start" font-weight="bold">200 of 200</text>
+<text x="60" y="1168" font-size="27" fill="#1c1c1c" text-anchor="start" font-weight="normal">matched requests settled by</text>
+<text x="60" y="1202" font-size="27" fill="#1c1c1c" text-anchor="start" font-weight="normal">the next US business day</text>
+<text x="560" y="1120" font-size="58" fill="#d9822b" text-anchor="start" font-weight="bold">under 1 in 10</text>
+<text x="560" y="1168" font-size="27" fill="#1c1c1c" text-anchor="start" font-weight="normal">requests since December 2024 are</text>
+<text x="560" y="1202" font-size="27" fill="#1c1c1c" text-anchor="start" font-weight="normal">not in that record</text>
+<line x1="60" x2="1020" y1="1262" y2="1262" stroke="#e3e3e3" stroke-width="2"/>
+<text x="60" y="1310" font-size="26" fill="#555555" text-anchor="start" font-weight="normal">Marco Amendola · data and code: github.com/x-pertknight/tbill-collateral-memo</text>
+</svg>

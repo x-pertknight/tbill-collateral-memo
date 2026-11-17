@@ -1,0 +1,965 @@
+{
+ "admin_events": {
+  "BurnFrom": 11,
+  "Cancel": 6,
+  "MintTo": 12,
+  "ReIssue": 15,
+  "SetController": 0,
+  "SetKycManager": 0,
+  "SetRedemption": 0,
+  "SetTBillPriceFeed": 0
+ },
+ "as_of": "2026-11-16",
+ "chains": {
+  "all_m": 254.00894913597128,
+  "all_value_usd_m": 295.5368442892268,
+  "arb_m": 0.0,
+  "arb_morpho_markets": 0,
+  "bnb_after_events": "mint 43.2M on 2026-06-09; burn 26.1M on 2026-07-17; mint 26.1M on 2026-07-20; mint 43.5M on 2026-07-21; mint 43.2M on 2026-09-17",
+  "bnb_back_date": "2026-07-21",
+  "bnb_back_m": 26.07783902892317,
+  "bnb_days": 184,
+  "bnb_drop_date": "2026-07-18",
+  "bnb_drop_m": 26.078747999999987,
+  "bnb_event_burned_m": 26.078748,
+  "bnb_event_burns": 1,
+  "bnb_event_minted_m": 243.58421609224126,
+  "bnb_event_mints": 5,
+  "bnb_first_mint_date": "2026-05-26",
+  "bnb_maintainer": "Safe 4 of 5",
+  "bnb_match_gap_tokens": 0.0,
+  "bnb_match_tokens": 87625893.654994,
+  "bnb_mint_recipients": 1,
+  "bnb_morpho_isKyc": "false",
+  "bnb_morpho_markets": 0,
+  "bnb_other_mints_m": 130.3158690386913,
+  "bnb_supply_m": 217.9417726936853,
+  "burn_date": "2026-05-26",
+  "burn_holder_mint_date": "2026-05-20",
+  "burn_holder_mint_tokens": 43703161.137051,
+  "burn_holder_transfer_date": "2026-04-10",
+  "burn_holder_transfer_tokens": 43922761.517943,
+  "burn_share_of_fall_pct": 54.4,
+  "burn_source_mints_tokens": 43922752.517943,
+  "burn_to_mint_min": 9,
+  "eth_assets_change_pct": -75.1,
+  "eth_assets_first_m": 80.36396540625769,
+  "eth_assets_now_m": 19.97433663581272,
+  "eth_burn_m": 87.625893654994,
+  "eth_burn_tokens": 87625893.654994,
+  "eth_burnfrom_after_m": 4.586156528151,
+  "eth_first_m": 69.071477197157,
+  "eth_m": 17.167606532286,
+  "eth_morpho_markets": 0,
+  "eth_share_pct": 6.8,
+  "two_chain_first_date": "2026-05-18",
+  "two_chain_first_m": 69.071477197157,
+  "two_chain_now_m": 235.10937922597128,
+  "two_chain_vs_peak_pct": 31.8,
+  "xrpl_m": 18.89956991
+ },
+ "comp": {
+  "eutbl_lltvs": "91.5%, 96.5%",
+  "eutbl_main": {
+   "borrow_usd": 2608555.75,
+   "chain": "Ethereum",
+   "collateral_usd": 2934300.47,
+   "lltv_pct": 96.5,
+   "loan": "EURCV",
+   "market_id": "0xaa7231d6bee28b578efe38b52e801d5d3067023853342fc06ded437d2a80ef98",
+   "oracle": "0xf071b0a62ef2a54c1Dca791134421EE16c2C43d9",
+   "oracle_type": "ChainlinkOracleV2",
+   "supply_usd": 2897429.19,
+   "token": "EUTBL",
+   "vaults": 4
+  },
+  "eutbl_nav": 1.063078,
+  "eutbl_supply_tokens": 20438310.51733,
+  "markets": [
+   {
+    "borrow_usd": 0,
+    "chain": "Ethereum",
+    "collateral_usd": 0,
+    "lltv_pct": 91.5,
+    "loan": "USDC",
+    "market_id": "0xbc81f138bfa9b05089a4e3d88ac6bc1367407b44680c22b83b95cdd98d3eed7c",
+    "oracle": "0xb208bFDf2A129386d7f1617D8498a69d2553f949",
+    "oracle_type": "ChainlinkOracleV2",
+    "supply_usd": 0,
+    "token": "cUSDO",
+    "vaults": 0
+   },
+   {
+    "borrow_usd": 0,
+    "chain": "Ethereum",
+    "collateral_usd": 2.37,
+    "lltv_pct": 91.5,
+    "loan": "AUSD",
+    "market_id": "0xabb6eb30c6abf4c87a87392129cc9b82cdf140cc643406a87397c2a28901af5d",
+    "oracle": "0x68066D2891254F1F3285Cac0bB16B65B28EE3cAb",
+    "oracle_type": "ChainlinkOracleV2",
+    "supply_usd": 1.52,
+    "token": "USCC",
+    "vaults": 0
+   },
+   {
+    "borrow_usd": 2608555.75,
+    "chain": "Ethereum",
+    "collateral_usd": 2934300.47,
+    "lltv_pct": 96.5,
+    "loan": "EURCV",
+    "market_id": "0xaa7231d6bee28b578efe38b52e801d5d3067023853342fc06ded437d2a80ef98",
+    "oracle": "0xf071b0a62ef2a54c1Dca791134421EE16c2C43d9",
+    "oracle_type": "ChainlinkOracleV2",
+    "supply_usd": 2897429.19,
+    "token": "EUTBL",
+    "vaults": 4
+   },
+   {
+    "borrow_usd": 0,
+    "chain": "Ethereum",
+    "collateral_usd": 0,
+    "lltv_pct": 91.5,
+    "loan": "USDC",
+    "market_id": "0x953151614e82ac81cd978d354d7f741bf7f479cdfbe6d48818f8f9454e08657f",
+    "oracle": "0x26Be0B9fDAF2855428DEee155b195eE802144ACD",
+    "oracle_type": "ChainlinkOracleV2",
+    "supply_usd": 0,
+    "token": "USDO",
+    "vaults": 0
+   },
+   {
+    "borrow_usd": 0,
+    "chain": "Ethereum",
+    "collateral_usd": 0,
+    "lltv_pct": 86.0,
+    "loan": "USDC",
+    "market_id": "0x94685ffdef839c95c7bdc39a6f044b4112942918d9e0854492768963d5dbfc20",
+    "oracle": "0xDddd770BADd886dF3864029e4B377B5F6a2B6b83",
+    "oracle_type": "ChainlinkOracle",
+    "supply_usd": 0,
+    "token": "USCC",
+    "vaults": 0
+   },
+   {
+    "borrow_usd": 0,
+    "chain": "Ethereum",
+    "collateral_usd": 0,
+    "lltv_pct": 86.0,
+    "loan": "USDC",
+    "market_id": "0x92c2cbb93d0f50e6e9e810a53a224ae0db59a6441ca830b8b00dfbd8419931e3",
+    "oracle": "0x592Db4fDAac9D4A0C358aEF06F05D918d0415B89",
+    "oracle_type": "Unknown",
+    "supply_usd": 0,
+    "token": "USCC",
+    "vaults": 0
+   },
+   {
+    "borrow_usd": 0,
+    "chain": "Ethereum",
+    "collateral_usd": 1.31,
+    "lltv_pct": 86.0,
+    "loan": "USDC",
+    "market_id": "0x7f2e2623ef8ee4b649fa9aa92762b889b6a6af74be25d0a7b08b42e7a21e903a",
+    "oracle": "0x15D5bFb9Db8C195826d079991780F64F3DeDF2Ee",
+    "oracle_type": "Unknown",
+    "supply_usd": 20.0,
+    "token": "USCC",
+    "vaults": 0
+   },
+   {
+    "borrow_usd": 0,
+    "chain": "Base",
+    "collateral_usd": 0,
+    "lltv_pct": 94.5,
+    "loan": "jEUR",
+    "market_id": "0x6767e6495b802fa1f6f9ce9c1dba21f2735872f33a020615a0dcaa4292bc0687",
+    "oracle": "0xc48e48f95dE1CC70193c1958F703772D3C4Cce70",
+    "oracle_type": "ChainlinkOracleV2",
+    "supply_usd": 5507.54,
+    "token": "EUTBL",
+    "vaults": 0
+   },
+   {
+    "borrow_usd": 0,
+    "chain": "Ethereum",
+    "collateral_usd": 0,
+    "lltv_pct": 91.5,
+    "loan": "EURCV",
+    "market_id": "0x664bce01b281e4596a51fb268e4fe4e13c98200ce9651d24458a4380c2b31280",
+    "oracle": "0xf071b0a62ef2a54c1Dca791134421EE16c2C43d9",
+    "oracle_type": "ChainlinkOracleV2",
+    "supply_usd": 1.1,
+    "token": "EUTBL",
+    "vaults": 0
+   },
+   {
+    "borrow_usd": 1.07,
+    "chain": "Ethereum",
+    "collateral_usd": 9.46,
+    "lltv_pct": 91.5,
+    "loan": "USDC",
+    "market_id": "0x1a9ccaca2dba9469cd9cba3d077466761b05f465c412d2bf2c71614c4963dd84",
+    "oracle": "0x68066D2891254F1F3285Cac0bB16B65B28EE3cAb",
+    "oracle_type": "ChainlinkOracleV2",
+    "supply_usd": 1.17,
+    "token": "USCC",
+    "vaults": 3
+   },
+   {
+    "borrow_usd": 0.0,
+    "chain": "Ethereum",
+    "collateral_usd": 1.05,
+    "lltv_pct": 91.5,
+    "loan": "USDC",
+    "market_id": "0x15f30b939b8590be30aa22cd8d6367cf90a0ae460ce7f644ddbf58b8442e619a",
+    "oracle": "0x26Be0B9fDAF2855428DEee155b195eE802144ACD",
+    "oracle_type": "ChainlinkOracleV2",
+    "supply_usd": 0.01,
+    "token": "cUSDO",
+    "vaults": 0
+   },
+   {
+    "borrow_usd": 0,
+    "chain": "Ethereum",
+    "collateral_usd": 0,
+    "lltv_pct": 96.5,
+    "loan": "USDC",
+    "market_id": "0x0af7f7f961ccf778fcc40f0a43d2878cc595fd81203e1a9fea1b65266805cf32",
+    "oracle": "0xC0D8DCD624dD8DacA93E719b83C071e2A632D9Da",
+    "oracle_type": "ChainlinkOracleV2",
+    "supply_usd": 0,
+    "token": "USCC",
+    "vaults": 0
+   }
+  ],
+  "onchain": {
+   "EUTBL": {
+    "authority": "0x344278aff344d6fb960705dc18a4912221608472",
+    "control_dead_address_allowed": "false",
+    "decimals": "5",
+    "morpho_blue_allowed": "true",
+    "paused": "false",
+    "rule": "_update requires authority.canCall(account, token, transfer) for sender and receiver",
+    "symbol": "\"EUTBL\"",
+    "totalSupply_raw": "2043831051733"
+   },
+   "USCC": {
+    "allowlist": "0xBcBC2b4FB2AbE1C598C9ea91E0b03338e4728D1f",
+    "control_dead_address_allowed": "false",
+    "decimals": "6",
+    "isPublicInstrument": "false",
+    "morpho_blue_allowed": "true",
+    "paused": "false",
+    "rule": "transfer/transferFrom require isAllowed(sender) and isAllowed(receiver)",
+    "symbol": "\"USCC\"",
+    "totalSupply_raw": "4066680133168"
+   },
+   "issuer_defi_tokens": {
+    "USDO": {
+     "bonusMultiplier": "1067111780821917568",
+     "decimals": "18",
+     "morpho_blue_isBanned": "false",
+     "paused": "false",
+     "symbol": "\"USDO\"",
+     "totalSupply_raw": "12571869386993553730185070"
+    },
+    "cUSDO": {
+     "decimals": "18",
+     "paused": "false",
+     "symbol": "\"cUSDO\"",
+     "totalSupply_raw": "9602946617785013243339155"
+    },
+    "rule": "transfer reverts only if sender is on the ban list or the contract is paused; no KYC check on either side",
+    "usdo_market_oracle": {
+     "BASE_FEED_1": "0x0000000000000000000000000000000000000000",
+     "BASE_VAULT": "0xaD55aebc9b8c03FC43cd9f62260391c13c23e7c0",
+     "address": "0x26Be0B9fDAF2855428DEee155b195eE802144ACD",
+     "price": "1066995017935000000000000"
+    }
+   },
+   "nav_feeds": {
+    "EUTBL NAV feed": {
+     "decimals": "6",
+     "description": "\"EUTBL",
+     "latestRoundData": [
+      "18446744073709552390 [1.844e19]",
+      "1063078 [1.063e6]",
+      "1794851764 [1.794e9]",
+      "1794851783 [1.794e9]",
+      "18446744073709552390 [1.844e19]"
+     ]
+    },
+    "USCC NAV feed": {
+     "decimals": "6",
+     "description": "\"USCC",
+     "latestRoundData": [
+      "18446744073709552396 [1.844e19]",
+      "11828822 [1.182e7]",
+      "1794835749 [1.794e9]",
+      "1794835763 [1.794e9]",
+      "18446744073709552396 [1.844e19]"
+     ]
+    }
+   }
+  },
+  "uscc_eth_markets": 6,
+  "uscc_lltvs": "86%, 91.5%, 96.5%",
+  "uscc_main": {
+   "borrow_usd": 0,
+   "chain": "Ethereum",
+   "collateral_usd": 1.31,
+   "lltv_pct": 86.0,
+   "loan": "USDC",
+   "market_id": "0x7f2e2623ef8ee4b649fa9aa92762b889b6a6af74be25d0a7b08b42e7a21e903a",
+   "oracle": "0x15D5bFb9Db8C195826d079991780F64F3DeDF2Ee",
+   "oracle_type": "Unknown",
+   "supply_usd": 20.0,
+   "token": "USCC",
+   "vaults": 0
+  },
+  "uscc_max_supply_usd": 20.0,
+  "uscc_nav": 11.828822,
+  "uscc_supply_tokens": 4066680.133168,
+  "uscc_vault_market": {
+   "borrow_usd": 1.07,
+   "chain": "Ethereum",
+   "collateral_usd": 9.46,
+   "lltv_pct": 91.5,
+   "loan": "USDC",
+   "market_id": "0x1a9ccaca2dba9469cd9cba3d077466761b05f465c412d2bf2c71614c4963dd84",
+   "oracle": "0x68066D2891254F1F3285Cac0bB16B65B28EE3cAb",
+   "oracle_type": "ChainlinkOracleV2",
+   "supply_usd": 1.17,
+   "token": "USCC",
+   "vaults": 3
+  },
+  "usdo_markets": [
+   {
+    "borrow_usd": 0,
+    "chain": "Ethereum",
+    "collateral_usd": 0,
+    "lltv_pct": 91.5,
+    "loan": "USDC",
+    "market_id": "0xbc81f138bfa9b05089a4e3d88ac6bc1367407b44680c22b83b95cdd98d3eed7c",
+    "oracle": "0xb208bFDf2A129386d7f1617D8498a69d2553f949",
+    "oracle_type": "ChainlinkOracleV2",
+    "supply_usd": 0,
+    "token": "cUSDO",
+    "vaults": 0
+   },
+   {
+    "borrow_usd": 0,
+    "chain": "Ethereum",
+    "collateral_usd": 0,
+    "lltv_pct": 91.5,
+    "loan": "USDC",
+    "market_id": "0x953151614e82ac81cd978d354d7f741bf7f479cdfbe6d48818f8f9454e08657f",
+    "oracle": "0x26Be0B9fDAF2855428DEee155b195eE802144ACD",
+    "oracle_type": "ChainlinkOracleV2",
+    "supply_usd": 0,
+    "token": "USDO",
+    "vaults": 0
+   },
+   {
+    "borrow_usd": 0.0,
+    "chain": "Ethereum",
+    "collateral_usd": 1.05,
+    "lltv_pct": 91.5,
+    "loan": "USDC",
+    "market_id": "0x15f30b939b8590be30aa22cd8d6367cf90a0ae460ce7f644ddbf58b8442e619a",
+    "oracle": "0x26Be0B9fDAF2855428DEee155b195eE802144ACD",
+    "oracle_type": "ChainlinkOracleV2",
+    "supply_usd": 0.01,
+    "token": "cUSDO",
+    "vaults": 0
+   }
+  ]
+ },
+ "concentration": {
+  "safe_role_names": "canceller (timelock), default_admin (controller), default_admin (oracle), executor (timelock), proposer (timelock)",
+  "safe_role_slots": 6,
+  "safe_roles_in_other_contracts": 5
+ },
+ "derived": {
+  "admin": {
+   "controller_admin": "Safe 4 of 5",
+   "controller_operator": "single key",
+   "kyc_owner": "Safe 3 of 4",
+   "kyc_owner_ms": "3-of-4 multisig",
+   "maintainer": "Safe 4 of 5",
+   "maintainer_ms": "4-of-5 multisig",
+   "oracle_admin": "Safe 4 of 5",
+   "oracle_operator": "single key",
+   "redemption_owner": "single key",
+   "redemption_pauser": "single key",
+   "timelock_delay_h": 24.0,
+   "timelock_executors": "Safe 4 of 5",
+   "timelock_proposers": "Safe 4 of 5, Safe 3 of 5",
+   "vault_operators": "single key, single key"
+  },
+  "exit": {
+   "price_weekday": 1.162908145055,
+   "price_weekend": 1.16232640011,
+   "rate_shock_100bp_nav_pct": -0.25
+  },
+  "limits": {
+   "cap_5pct_share_pct": 5.0,
+   "cap_5pct_usd": 998716.0678321001,
+   "cap_bonus_usd": 43841.33611691032,
+   "cap_half_m": 0.5,
+   "cap_half_usd": 500000.0,
+   "cap_m": 1.0,
+   "cap_share_of_supply_pct": 5.0,
+   "cap_usd": 1000000.0,
+   "cap_vs_median_day": 1.428422464514415,
+   "lif_pct_77": 7.4,
+   "lif_pct_86": 4.4,
+   "lif_pct_915": 2.6,
+   "lltv": 86.0,
+   "nav_margin_to_lltv_pct": 14.0,
+   "total_assets_m": 20.0,
+   "vault_min_assets_m": 100,
+   "vault_share_pct": 1.0
+  },
+  "usdo": {
+   "bonus_multiplier": 1.0671117808219175,
+   "cusdo_supply_m": 9.602946617785014,
+   "lltv_pct": 91.5,
+   "markets": 3,
+   "oracle_price": 1.066995017935,
+   "supply_usd": 0.01,
+   "usdo_supply_m": 12.571869386993553
+  }
+ },
+ "docs": {
+  "first_deposit_usd": 100000,
+  "queue_business_days": 1,
+  "ter_faq_bps": 30,
+  "ter_fees_page_bps": 35,
+  "tx_fee_bps": 5
+ },
+ "fall": {
+  "admin_burnfrom_largest_date": "2026-05-26",
+  "admin_burnfrom_largest_tokens": 87625893.654994,
+  "admin_burnfrom_tokens": 92212070.183145,
+  "admin_mintto_tokens": 50374782.860828,
+  "burned_tokens": 387959355.110277,
+  "minted_tokens": 226747068.868682,
+  "net_change_tokens": -161212286.241595,
+  "other_burn_tokens": -1.261615700798302e-08,
+  "queue_distinct_senders": 24,
+  "queue_requests": 171,
+  "queue_settled_tokens": 295747270.452578,
+  "queue_settled_usdc": 333566265.309248,
+  "queue_top1_share_pct": 6.9,
+  "queue_top3_months": "2025-09 (43M), 2025-10 (59M), 2025-11 (94M)",
+  "queue_top3_months_share_pct": 66.4,
+  "queue_top5_share_pct": 30.4,
+  "usdo_express_first": "2025-02-20",
+  "usdo_express_last": "2025-05-07",
+  "usdo_express_tokens_each_way": 5091369.544343,
+  "usdo_express_transfers": 30,
+  "usdo_express_transfers_since_peak": 0,
+  "window_start": "2025-08-22"
+ },
+ "funding": {
+  "settlement_txs_365d": 120,
+  "settlements_with_prior_24h_inflow_pct": 100.0,
+  "usdc_inflow_senders": 14,
+  "usdc_inflows_from_named": 24,
+  "usdc_inflows_named_usd": 62268,
+  "usdc_inflows_top_sender": 304,
+  "usdc_inflows_total": 441
+ },
+ "holders": {
+  "contract_holders_excl_vault": 2,
+  "holders_excl_vault": 11,
+  "supply_from_holders": 17167606.532286,
+  "top1_share_of_supply_pct": 54.8,
+  "top5_share_of_outside_vault_pct": 94.5,
+  "top5_share_of_supply_pct": 92.8,
+  "vault_queued_shares": 301911.71
+ },
+ "liq": {
+  "comparable_markets_checked": 11,
+  "eutbl_liquidations": 0,
+  "min_listed_word": "three",
+  "recent_callers": 175,
+  "recent_days": 97,
+  "recent_liquidations": 655,
+  "top_allowed_eutbl": 0,
+  "top_allowed_uscc": 0,
+  "top_kyc_tbill": 0,
+  "top_share_of_recent_pct": 35,
+  "top_tested": 8,
+  "top_tested_word": "eight",
+  "uscc_liquidations": 1,
+  "uscc_liquidator_allowed": true,
+  "uscc_repaid_usd": 19.000024
+ },
+ "nav": {
+  "annualised_growth_90d_pct": 3.52,
+  "longest_gap_days_last365": 4.0,
+  "max_step_pct_last365": 0.0795,
+  "min_step_pct_last365": -0.0726,
+  "nav_now": 1.16348989,
+  "nav_now_ts": 1794787931,
+  "neg_max_recover_days": 8.8,
+  "neg_median_size_pct": -0.0039,
+  "neg_month_boundary": 3,
+  "neg_never_recovered": 0,
+  "neg_not_recovered_24h": 5,
+  "neg_recovered_24h": 11,
+  "neg_worst_date": "2026-09-09",
+  "neg_worst_recover_h": 211.5,
+  "negative_steps_all": 143,
+  "negative_steps_last365": 16,
+  "now_ts": 1794862019,
+  "steps_below_minus_3bps_last365": 4,
+  "update_days_last365": 253,
+  "updates_last365": 310,
+  "updates_total": 1228,
+  "weekday_update_share_pct": 99.0
+ },
+ "queue": {
+  "bd_max": 1,
+  "bd_over2": 0,
+  "bd_p90": 1,
+  "bd_share_le1_pct": 100.0,
+  "bd_share_le2_pct": 100.0,
+  "bd_within1_text": "all 200 settled",
+  "cancelled_big_requests": 3,
+  "cancelled_big_tokens": 9090017.80291,
+  "cancelled_first": "2025-04-06",
+  "cancelled_last": "2025-06-25",
+  "cancelled_requests": 6,
+  "cancelled_tokens": 9246578.80291,
+  "favour_first_month": "2025-09",
+  "favour_first_text": "September 2025",
+  "favour_last_month": "2025-11",
+  "favour_last_text": "November 2025",
+  "favour_max_h": 71.9,
+  "favour_median_h": "16.0 / 15.8 / 10.6",
+  "favour_median_hi": 16.0,
+  "favour_median_lo": 10.6,
+  "favour_tokens": 196447612.87011498,
+  "latency_h_max": 86.2,
+  "latency_h_median": 15.8,
+  "latency_h_p90": 26.6,
+  "latency_share_under_24h_pct": 88.5,
+  "latency_share_under_72h_pct": 98.5,
+  "oldest_pending_age_h": 14.4,
+  "paired_from": "2024-12-01",
+  "paired_from_text": "December 2024",
+  "paired_requests": 200,
+  "pending_requests": 3,
+  "pending_shares": 301911.71,
+  "pending_usd": 351271.2222576119,
+  "request_usd_max": 23782846,
+  "request_usd_median": 370227,
+  "settle_days": 157,
+  "settle_usd_day_max": 61001206,
+  "settle_usd_day_median": 700073,
+  "settle_usd_day_p95": 10751182,
+  "slowest6_bd": "1, 1, 1, 1, 0, 0",
+  "slowest6_span": "between Thursday and Saturday",
+  "slowest6_start_days": "Fri, Fri, Thu, Sat, Fri, Fri",
+  "unmatched_months": "2024-12",
+  "unmatched_requests": 12,
+  "unmatched_share_pct": 8.3,
+  "unmatched_tokens": 12879022.63905,
+  "window_closed": 218
+ },
+ "redemption_contract": {
+  "asset": "0x7712c34205737192402172409a8F7ccef8aA2AEc",
+  "liquidity": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+  "owner_type": {
+   "code_bytes": 0,
+   "type": "single key (no contract code)"
+  },
+  "paused": "false",
+  "pauser_type": {
+   "code_bytes": 0,
+   "type": "single key (no contract code)"
+  },
+  "settlement": "0x57Dd4E92712b0fBC8d3f3e3645EebCf2600aCef0"
+ },
+ "role_holders_state": {
+  "fee_manager_owner": {
+   "code_bytes": 171,
+   "signers": 5,
+   "threshold": 4,
+   "type": "Safe multisig"
+  },
+  "kyc_manager_owner": {
+   "code_bytes": 171,
+   "signers": 4,
+   "threshold": 3,
+   "type": "Safe multisig"
+  },
+  "maintainer": {
+   "code_bytes": 171,
+   "signers": 5,
+   "threshold": 4,
+   "type": "Safe multisig"
+  },
+  "owner": {
+   "code_bytes": 7717,
+   "min_delay_s": 86400,
+   "type": "timelock"
+  },
+  "qTreasury": {
+   "code_bytes": 171,
+   "signers": 4,
+   "threshold": 3,
+   "type": "Safe multisig"
+  }
+ },
+ "roles": {
+  "controller:DEFAULT_ADMIN_ROLE": [
+   {
+    "code_bytes": 171,
+    "public_name": "TBILL maintainer (Safe)",
+    "signers": 5,
+    "threshold": 4,
+    "type": "Safe multisig"
+   }
+  ],
+  "controller:OPERATOR_ROLE": [
+   {
+    "code_bytes": 0,
+    "public_name": null,
+    "type": "single key (no contract code)"
+   }
+  ],
+  "oracle:DEFAULT_ADMIN_ROLE": [
+   {
+    "code_bytes": 171,
+    "public_name": "TBILL maintainer (Safe)",
+    "signers": 5,
+    "threshold": 4,
+    "type": "Safe multisig"
+   }
+  ],
+  "oracle:OPERATOR_ROLE": [
+   {
+    "code_bytes": 0,
+    "public_name": null,
+    "type": "single key (no contract code)"
+   }
+  ],
+  "vault:operators (SetOperator)": [
+   {
+    "code_bytes": 0,
+    "public_name": null,
+    "type": "single key (no contract code)"
+   },
+   {
+    "code_bytes": 0,
+    "public_name": null,
+    "type": "single key (no contract code)"
+   }
+  ],
+  "vault_owner_timelock:CANCELLER_ROLE": [
+   {
+    "code_bytes": 171,
+    "public_name": "TBILL maintainer (Safe)",
+    "signers": 5,
+    "threshold": 4,
+    "type": "Safe multisig"
+   },
+   {
+    "code_bytes": 123,
+    "public_name": null,
+    "signers": 5,
+    "threshold": 3,
+    "type": "Safe multisig"
+   }
+  ],
+  "vault_owner_timelock:EXECUTOR_ROLE": [
+   {
+    "code_bytes": 171,
+    "public_name": "TBILL maintainer (Safe)",
+    "signers": 5,
+    "threshold": 4,
+    "type": "Safe multisig"
+   }
+  ],
+  "vault_owner_timelock:PROPOSER_ROLE": [
+   {
+    "code_bytes": 171,
+    "public_name": "TBILL maintainer (Safe)",
+    "signers": 5,
+    "threshold": 4,
+    "type": "Safe multisig"
+   },
+   {
+    "code_bytes": 123,
+    "public_name": null,
+    "signers": 5,
+    "threshold": 3,
+    "type": "Safe multisig"
+   }
+  ],
+  "vault_owner_timelock:TIMELOCK_ADMIN_ROLE": [
+   {
+    "code_bytes": 7717,
+    "min_delay_s": 86400,
+    "public_name": "TBILL vault owner (timelock)",
+    "type": "timelock"
+   }
+  ]
+ },
+ "scores": [
+  [
+   "P1",
+   "Morpho Blue not KYC-whitelisted",
+   "isKyc=false",
+   "HIT"
+  ],
+  [
+   "P2",
+   "0 to 6 contract holders besides the vault",
+   "2",
+   "HIT"
+  ],
+  [
+   "P3",
+   "Supply 25M to 150M tokens",
+   "17.17M on Ethereum; 254.0M across all chains",
+   "MISS"
+  ],
+  [
+   "P4",
+   "90-day supply change within -30% to +40%",
+   "-6.7%",
+   "HIT"
+  ],
+  [
+   "P5",
+   "15 to 150 holders",
+   "11 (excluding the vault's queued shares)",
+   "MISS"
+  ],
+  [
+   "P6",
+   "Top-5 share 60% to 95%",
+   "92.8%",
+   "HIT"
+  ],
+  [
+   "P7",
+   "NAV 1.10 to 1.20",
+   "1.1635",
+   "HIT"
+  ],
+  [
+   "P8",
+   "230 to 270 update days, longest gap 3 to 5 days",
+   "253 days, 4.0 d",
+   "HIT"
+  ],
+  [
+   "P9",
+   "Largest step under +0.03%, no negative step",
+   "max 0.0795%, min -0.0726%, 16 negative of 310",
+   "MISS"
+  ],
+  [
+   "P10",
+   "90-day annualised NAV growth 3.0% to 4.4%",
+   "3.52%",
+   "HIT"
+  ],
+  [
+   "P11",
+   "No DEX pool with at least $50k TVL",
+   "DexScreener: 0 pairs (one aggregator only)",
+   "HIT"
+  ],
+  [
+   "P12",
+   "Instant path set and not paused",
+   "set, paused=false; vault BUIDL = 0.00",
+   "PARTIAL"
+  ],
+  [
+   "P13",
+   "$0.5M to $15M USDC in the redemption path",
+   "redemption contract $0.00; vault $0.69",
+   "MISS"
+  ],
+  [
+   "P14",
+   "$1M redemption clears instantly (eth_call)",
+   "redeemIns reverts: Not asset holder; queue request accepted: True",
+   "MISS"
+  ],
+  [
+   "P15",
+   "Queue length 0 to 5",
+   "3",
+   "HIT"
+  ],
+  [
+   "P16",
+   "Redemption fee exactly 5 bps",
+   "5 bps weekday, 10 bps weekend",
+   "PARTIAL"
+  ],
+  [
+   "P17",
+   "Owner is a multisig, 2-4 of 3-7",
+   "owner is a 24 h timelock; proposers Safe 4 of 5, Safe 3 of 5",
+   "PARTIAL"
+  ],
+  [
+   "P18",
+   "Maintainer is one address",
+   "one address; it is a Safe 4 of 5",
+   "PARTIAL"
+  ],
+  [
+   "P19",
+   "Reject or conditional verdict",
+   "Reject today; limits conditional",
+   "HIT"
+  ],
+  [
+   "P20",
+   "LLTV 77% to 91.5%",
+   "86.0%",
+   "HIT"
+  ],
+  [
+   "P21",
+   "Supply cap $1M to $10M",
+   "$0.999M (first-pass 5% rule; the memo now uses a fixed $1.0M)",
+   "MISS"
+  ],
+  [
+   "A1",
+   "EUTBL transfers permissioned",
+   "allowed(Morpho Blue)=true, control address=false",
+   "HIT"
+  ],
+  [
+   "A2",
+   "Morpho Blue allowed on EUTBL",
+   "true",
+   "HIT"
+  ],
+  [
+   "A3",
+   "EUTBL market oracle on an issuer NAV feed",
+   "Chainlink-style adapter on a feed described as an EUTBL NAV feed",
+   "HIT"
+  ],
+  [
+   "A4",
+   "EUTBL LLTV 86% or 91.5%",
+   "markets at 91.5%, 96.5%; largest market 96.5%",
+   "MISS"
+  ],
+  [
+   "A5",
+   "USCC transfers permissioned",
+   "allowed(Morpho Blue)=true, control address=false",
+   "HIT"
+  ],
+  [
+   "A6",
+   "Morpho Blue allowed on USCC",
+   "true",
+   "HIT"
+  ],
+  [
+   "A7",
+   "USCC market oracle on a NAV feed",
+   "Chainlink-style adapter on a feed described as a USCC NAV feed",
+   "HIT"
+  ],
+  [
+   "A8",
+   "USCC LLTV 77% to 86%",
+   "markets at 86%, 91.5%, 96.5%; vault-listed market 91.5%",
+   "PARTIAL"
+  ],
+  [
+   "A9",
+   "Supplied $0.5M to $50M in each",
+   "EUTBL $2,897,429; USCC largest $20",
+   "PARTIAL"
+  ],
+  [
+   "U1",
+   "USDO/cUSDO transfer needs no KYC",
+   "sender ban list and pause only",
+   "HIT"
+  ],
+  [
+   "U2",
+   "USDO market oracle on the issuer's own rate",
+   "ERC-4626 conversion of cUSDO, no price feed",
+   "HIT"
+  ]
+ ],
+ "sim": {
+  "sim_1000": {
+   "instant_ok": false,
+   "instant_reason": "Not asset holder",
+   "queue_ok": true
+  },
+  "sim_10000": {
+   "instant_ok": false,
+   "instant_reason": "Not asset holder",
+   "queue_ok": true
+  },
+  "sim_100000": {
+   "instant_ok": false,
+   "instant_reason": "Not asset holder",
+   "queue_ok": true
+  },
+  "sim_1000000": {
+   "instant_ok": false,
+   "instant_reason": "Not asset holder",
+   "queue_ok": true
+  }
+ },
+ "state": {
+  "kyc_strict": "true",
+  "mgmt_fee_bps": 35,
+  "morpho_blue_isKyc": "false",
+  "nav_vault": 1.163489,
+  "opltreasury_usdc": 1233.354394,
+  "qtreasury_usdc": 5.859955,
+  "queue_length_state": 3,
+  "redeem_fee_bps_weekday": 5,
+  "redeem_fee_bps_weekend": 10,
+  "redemption_usdc": 0.0,
+  "supply_cap_is_max_uint": true,
+  "total_assets_usd": 19974321.356642,
+  "vault_buidl": 0.0,
+  "vault_usdc": 0.692583
+ },
+ "state_block": 26429959,
+ "supply": {
+  "change_90d_pct": -6.7,
+  "fall_vs_peak_pct": 90.4,
+  "mint_burn_events": 868,
+  "peak_date": "2025-08-22",
+  "peak_supply": 178379892.773881,
+  "peak_ts": 1755852923,
+  "supply_30d_ago": 17953837.201608,
+  "supply_365d_ago": 109383654.372358,
+  "supply_90d_ago": 18406211.224966,
+  "supply_now": 17167606.532286
+ },
+ "tally": {
+  "HIT": 19,
+  "MISS": 7,
+  "PARTIAL": 6,
+  "total": 32
+ }
+}

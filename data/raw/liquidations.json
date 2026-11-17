@@ -1,0 +1,90 @@
+{
+ "by_collateral": {
+  "USCC": {
+   "bad_debt_raw": 0,
+   "liquidations": 1,
+   "repaid_raw": 19000024
+  }
+ },
+ "comparable_market_ids": 11,
+ "comparable_market_liquidators": [
+  {
+   "collateral": "USCC",
+   "eutbl_allowed": "false",
+   "is_contract": true,
+   "liquidator": "addr_0009",
+   "tbill_isKyc": "false",
+   "uscc_allowed": "true"
+  }
+ ],
+ "head_block": 26430096,
+ "recent_distinct_callers": 175,
+ "recent_liquidations_all_markets": 655,
+ "recent_window_blocks": 700000,
+ "top_liquidators": [
+  {
+   "eutbl_allowed": "false",
+   "is_contract": true,
+   "liquidations_recent": 59,
+   "liquidator": "addr_0001",
+   "tbill_isKyc": "false",
+   "uscc_allowed": "false"
+  },
+  {
+   "eutbl_allowed": "false",
+   "is_contract": true,
+   "liquidations_recent": 35,
+   "liquidator": "addr_0002",
+   "tbill_isKyc": "false",
+   "uscc_allowed": "false"
+  },
+  {
+   "eutbl_allowed": "false",
+   "is_contract": true,
+   "liquidations_recent": 32,
+   "liquidator": "addr_0003",
+   "tbill_isKyc": "false",
+   "uscc_allowed": "false"
+  },
+  {
+   "eutbl_allowed": "false",
+   "is_contract": false,
+   "liquidations_recent": 29,
+   "liquidator": "addr_0004",
+   "tbill_isKyc": "false",
+   "uscc_allowed": "false"
+  },
+  {
+   "eutbl_allowed": "false",
+   "is_contract": true,
+   "liquidations_recent": 21,
+   "liquidator": "addr_0005",
+   "tbill_isKyc": "false",
+   "uscc_allowed": "false"
+  },
+  {
+   "eutbl_allowed": "false",
+   "is_contract": true,
+   "liquidations_recent": 19,
+   "liquidator": "addr_0006",
+   "tbill_isKyc": "false",
+   "uscc_allowed": "false"
+  },
+  {
+   "eutbl_allowed": "false",
+   "is_contract": true,
+   "liquidations_recent": 19,
+   "liquidator": "addr_0007",
+   "tbill_isKyc": "false",
+   "uscc_allowed": "false"
+  },
+  {
+   "eutbl_allowed": "false",
+   "is_contract": true,
+   "liquidations_recent": 14,
+   "liquidator": "addr_0008",
+   "tbill_isKyc": "false",
+   "uscc_allowed": "false"
+  }
+ ]
+}

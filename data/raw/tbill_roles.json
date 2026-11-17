@@ -1,0 +1,108 @@
+{
+ "admin_event_counts": {
+  "BurnFrom(address,uint256)": 11,
+  "Cancel(uint256,uint256)": 6,
+  "MintTo(address,uint256)": 12,
+  "ReIssue(address,address,uint256)": 15,
+  "SetController(address)": 0,
+  "SetKycManager(address)": 0,
+  "SetRedemption(address)": 0,
+  "SetTBillPriceFeed(address)": 0
+ },
+ "head_block": 26430029,
+ "roles": {
+  "controller:DEFAULT_ADMIN_ROLE": [
+   {
+    "code_bytes": 171,
+    "public_name": "TBILL maintainer (Safe)",
+    "signers": 5,
+    "threshold": 4,
+    "type": "Safe multisig"
+   }
+  ],
+  "controller:OPERATOR_ROLE": [
+   {
+    "code_bytes": 0,
+    "public_name": null,
+    "type": "single key (no contract code)"
+   }
+  ],
+  "oracle:DEFAULT_ADMIN_ROLE": [
+   {
+    "code_bytes": 171,
+    "public_name": "TBILL maintainer (Safe)",
+    "signers": 5,
+    "threshold": 4,
+    "type": "Safe multisig"
+   }
+  ],
+  "oracle:OPERATOR_ROLE": [
+   {
+    "code_bytes": 0,
+    "public_name": null,
+    "type": "single key (no contract code)"
+   }
+  ],
+  "vault:operators (SetOperator)": [
+   {
+    "code_bytes": 0,
+    "public_name": null,
+    "type": "single key (no contract code)"
+   },
+   {
+    "code_bytes": 0,
+    "public_name": null,
+    "type": "single key (no contract code)"
+   }
+  ],
+  "vault_owner_timelock:CANCELLER_ROLE": [
+   {
+    "code_bytes": 171,
+    "public_name": "TBILL maintainer (Safe)",
+    "signers": 5,
+    "threshold": 4,
+    "type": "Safe multisig"
+   },
+   {
+    "code_bytes": 123,
+    "public_name": null,
+    "signers": 5,
+    "threshold": 3,
+    "type": "Safe multisig"
+   }
+  ],
+  "vault_owner_timelock:EXECUTOR_ROLE": [
+   {
+    "code_bytes": 171,
+    "public_name": "TBILL maintainer (Safe)",
+    "signers": 5,
+    "threshold": 4,
+    "type": "Safe multisig"
+   }
+  ],
+  "vault_owner_timelock:PROPOSER_ROLE": [
+   {
+    "code_bytes": 171,
+    "public_name": "TBILL maintainer (Safe)",
+    "signers": 5,
+    "threshold": 4,
+    "type": "Safe multisig"
+   },
+   {
+    "code_bytes": 123,
+    "public_name": null,
+    "signers": 5,
+    "threshold": 3,
+    "type": "Safe multisig"
+   }
+  ],
+  "vault_owner_timelock:TIMELOCK_ADMIN_ROLE": [
+   {
+    "code_bytes": 7717,
+    "min_delay_s": 86400,
+    "public_name": "TBILL vault owner (timelock)",
+    "type": "timelock"
+   }
+  ]
+ }
+}

@@ -1,0 +1,532 @@
+{
+ "fetched_at_unix": 1794861076,
+ "markets": [
+  {
+   "chain": {
+    "id": 1,
+    "network": "Ethereum"
+   },
+   "collateralAsset": {
+    "address": "0xaD55aebc9b8c03FC43cd9f62260391c13c23e7c0",
+    "decimals": 18,
+    "symbol": "cUSDO"
+   },
+   "listed": false,
+   "lltv": "915000000000000000",
+   "loanAsset": {
+    "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "symbol": "USDC"
+   },
+   "marketId": "0xbc81f138bfa9b05089a4e3d88ac6bc1367407b44680c22b83b95cdd98d3eed7c",
+   "oracle": {
+    "address": "0xb208bFDf2A129386d7f1617D8498a69d2553f949",
+    "data": {
+     "__typename": "MorphoChainlinkOracleV2Data",
+     "baseFeedOne": null,
+     "baseFeedTwo": null,
+     "baseOracleVault": {
+      "address": "0x90455bd11Ce8a67C57d467e634Dc142b8e4105Aa"
+     },
+     "quoteFeedOne": null,
+     "quoteFeedTwo": null,
+     "scaleFactor": "1000000000000000000000000000000000000"
+    },
+    "type": "ChainlinkOracleV2"
+   },
+   "state": {
+    "borrowAssetsUsd": 0,
+    "collateralAssetsUsd": 0,
+    "liquidityAssetsUsd": 0,
+    "price": null,
+    "supplyAssetsUsd": 0,
+    "utilization": 0
+   },
+   "supplyingVaultV2s": [],
+   "supplyingVaults": []
+  },
+  {
+   "chain": {
+    "id": 1,
+    "network": "Ethereum"
+   },
+   "collateralAsset": {
+    "address": "0x14d60E7FDC0D71d8611742720E4C50E7a974020c",
+    "decimals": 6,
+    "symbol": "USCC"
+   },
+   "listed": false,
+   "lltv": "915000000000000000",
+   "loanAsset": {
+    "address": "0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a",
+    "symbol": "AUSD"
+   },
+   "marketId": "0xabb6eb30c6abf4c87a87392129cc9b82cdf140cc643406a87397c2a28901af5d",
+   "oracle": {
+    "address": "0x68066D2891254F1F3285Cac0bB16B65B28EE3cAb",
+    "data": {
+     "__typename": "MorphoChainlinkOracleV2Data",
+     "baseFeedOne": {
+      "address": "0xAfFd8F5578E8590665de561bdE9E7BAdb99300d9"
+     },
+     "baseFeedTwo": null,
+     "baseOracleVault": null,
+     "quoteFeedOne": null,
+     "quoteFeedTwo": null,
+     "scaleFactor": "1000000000000000000000000000000"
+    },
+    "type": "ChainlinkOracleV2"
+   },
+   "state": {
+    "borrowAssetsUsd": 0,
+    "collateralAssetsUsd": 2.3657644,
+    "liquidityAssetsUsd": 1.5211472266322001,
+    "price": "11828822000000000000000000000000000000",
+    "supplyAssetsUsd": 1.5211472266322001,
+    "utilization": 0
+   },
+   "supplyingVaultV2s": [],
+   "supplyingVaults": []
+  },
+  {
+   "chain": {
+    "id": 1,
+    "network": "Ethereum"
+   },
+   "collateralAsset": {
+    "address": "0xa0769f7A8fC65e47dE93797b4e21C073c117Fc80",
+    "decimals": 5,
+    "symbol": "EUTBL"
+   },
+   "listed": true,
+   "lltv": "965000000000000000",
+   "loanAsset": {
+    "address": "0x5F7827FDeb7c20b443265Fc2F40845B715385Ff2",
+    "symbol": "EURCV"
+   },
+   "marketId": "0xaa7231d6bee28b578efe38b52e801d5d3067023853342fc06ded437d2a80ef98",
+   "oracle": {
+    "address": "0xf071b0a62ef2a54c1Dca791134421EE16c2C43d9",
+    "data": {
+     "__typename": "MorphoChainlinkOracleV2Data",
+     "baseFeedOne": {
+      "address": "0xfD628af590c4150A9651C1f4ddD0b4f532B703ae"
+     },
+     "baseFeedTwo": null,
+     "baseOracleVault": null,
+     "quoteFeedOne": null,
+     "quoteFeedTwo": null,
+     "scaleFactor": "10000000000000000000000000000000000000000000"
+    },
+    "type": "ChainlinkOracleV2"
+   },
+   "state": {
+    "borrowAssetsUsd": 2608555.751028639,
+    "collateralAssetsUsd": 2934300.466702769,
+    "liquidityAssetsUsd": 288873.4437030876,
+    "price": "10630780000000000000000000000000000000000000000000",
+    "supplyAssetsUsd": 2897429.1947317263,
+    "utilization": 0.900300085252011
+   },
+   "supplyingVaultV2s": [
+    {
+     "address": "0xD6d4b804014EF27836dBe9f8f6Bf6c71251548Ec",
+     "name": "Belem RWA EURCV"
+    },
+    {
+     "address": "0xbeef0C075Da5D01112AE5cF34d257074fB5DDB2f",
+     "name": "Steakhouse Prime EURCV"
+    }
+   ],
+   "supplyingVaults": [
+    {
+     "address": "0x34eCe536d2ae03192B06c0A67030D1Faf4c0Ba43",
+     "name": "EURCV Prime"
+    },
+    {
+     "address": "0x75741A12B36D181f44F389E0c6B1E0210311e3Ff",
+     "name": "Steakhouse EURCV"
+    }
+   ]
+  },
+  {
+   "chain": {
+    "id": 1,
+    "network": "Ethereum"
+   },
+   "collateralAsset": {
+    "address": "0x8238884Ec9668Ef77B90C6dfF4D1a9F4F4823BFe",
+    "decimals": 18,
+    "symbol": "USDO"
+   },
+   "listed": false,
+   "lltv": "915000000000000000",
+   "loanAsset": {
+    "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "symbol": "USDC"
+   },
+   "marketId": "0x953151614e82ac81cd978d354d7f741bf7f479cdfbe6d48818f8f9454e08657f",
+   "oracle": {
+    "address": "0x26Be0B9fDAF2855428DEee155b195eE802144ACD",
+    "data": {
+     "__typename": "MorphoChainlinkOracleV2Data",
+     "baseFeedOne": null,
+     "baseFeedTwo": null,
+     "baseOracleVault": {
+      "address": "0xaD55aebc9b8c03FC43cd9f62260391c13c23e7c0"
+     },
+     "quoteFeedOne": null,
+     "quoteFeedTwo": null,
+     "scaleFactor": 1000000000000
+    },
+    "type": "ChainlinkOracleV2"
+   },
+   "state": {
+    "borrowAssetsUsd": 0,
+    "collateralAssetsUsd": 0,
+    "liquidityAssetsUsd": 0,
+    "price": "1066995017935000000000000",
+    "supplyAssetsUsd": 0,
+    "utilization": 0
+   },
+   "supplyingVaultV2s": [],
+   "supplyingVaults": []
+  },
+  {
+   "chain": {
+    "id": 1,
+    "network": "Ethereum"
+   },
+   "collateralAsset": {
+    "address": "0x14d60E7FDC0D71d8611742720E4C50E7a974020c",
+    "decimals": 6,
+    "symbol": "USCC"
+   },
+   "listed": false,
+   "lltv": "860000000000000000",
+   "loanAsset": {
+    "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "symbol": "USDC"
+   },
+   "marketId": "0x94685ffdef839c95c7bdc39a6f044b4112942918d9e0854492768963d5dbfc20",
+   "oracle": {
+    "address": "0xDddd770BADd886dF3864029e4B377B5F6a2B6b83",
+    "data": {
+     "__typename": "MorphoChainlinkOracleData"
+    },
+    "type": "ChainlinkOracle"
+   },
+   "state": {
+    "borrowAssetsUsd": 0,
+    "collateralAssetsUsd": 0,
+    "liquidityAssetsUsd": 0,
+    "price": "650008001683985520957413467378922229261",
+    "supplyAssetsUsd": 0,
+    "utilization": 0
+   },
+   "supplyingVaultV2s": [],
+   "supplyingVaults": []
+  },
+  {
+   "chain": {
+    "id": 1,
+    "network": "Ethereum"
+   },
+   "collateralAsset": {
+    "address": "0x14d60E7FDC0D71d8611742720E4C50E7a974020c",
+    "decimals": 6,
+    "symbol": "USCC"
+   },
+   "listed": false,
+   "lltv": "860000000000000000",
+   "loanAsset": {
+    "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "symbol": "USDC"
+   },
+   "marketId": "0x92c2cbb93d0f50e6e9e810a53a224ae0db59a6441ca830b8b00dfbd8419931e3",
+   "oracle": {
+    "address": "0x592Db4fDAac9D4A0C358aEF06F05D918d0415B89",
+    "data": null,
+    "type": "Unknown"
+   },
+   "state": {
+    "borrowAssetsUsd": 0,
+    "collateralAssetsUsd": 0,
+    "liquidityAssetsUsd": 0,
+    "price": null,
+    "supplyAssetsUsd": 0,
+    "utilization": 0
+   },
+   "supplyingVaultV2s": [],
+   "supplyingVaults": []
+  },
+  {
+   "chain": {
+    "id": 1,
+    "network": "Ethereum"
+   },
+   "collateralAsset": {
+    "address": "0x14d60E7FDC0D71d8611742720E4C50E7a974020c",
+    "decimals": 6,
+    "symbol": "USCC"
+   },
+   "listed": false,
+   "lltv": "860000000000000000",
+   "loanAsset": {
+    "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "symbol": "USDC"
+   },
+   "marketId": "0x7f2e2623ef8ee4b649fa9aa92762b889b6a6af74be25d0a7b08b42e7a21e903a",
+   "oracle": {
+    "address": "0x15D5bFb9Db8C195826d079991780F64F3DeDF2Ee",
+    "data": null,
+    "type": "Unknown"
+   },
+   "state": {
+    "borrowAssetsUsd": 0,
+    "collateralAssetsUsd": 1.3146789347240002,
+    "liquidityAssetsUsd": 19.99871048942379,
+    "price": "10500000000000000000000000000000000000",
+    "supplyAssetsUsd": 19.99871048942379,
+    "utilization": 0
+   },
+   "supplyingVaultV2s": [],
+   "supplyingVaults": []
+  },
+  {
+   "chain": {
+    "id": 8453,
+    "network": "Base"
+   },
+   "collateralAsset": {
+    "address": "0xa0769f7A8fC65e47dE93797b4e21C073c117Fc80",
+    "decimals": 5,
+    "symbol": "EUTBL"
+   },
+   "listed": false,
+   "lltv": "945000000000000000",
+   "loanAsset": {
+    "address": "0x4154550f4Db74Dc38d1FE98e1F3F28ed6daD627d",
+    "symbol": "jEUR"
+   },
+   "marketId": "0x6767e6495b802fa1f6f9ce9c1dba21f2735872f33a020615a0dcaa4292bc0687",
+   "oracle": {
+    "address": "0xc48e48f95dE1CC70193c1958F703772D3C4Cce70",
+    "data": {
+     "__typename": "MorphoChainlinkOracleV2Data",
+     "baseFeedOne": {
+      "address": "0x29503f31B73F0734455942Eb888E13acA1588a4e"
+     },
+     "baseFeedTwo": null,
+     "baseOracleVault": null,
+     "quoteFeedOne": null,
+     "quoteFeedTwo": null,
+     "scaleFactor": "10000000000000000000000000000000000000000000"
+    },
+    "type": "ChainlinkOracleV2"
+   },
+   "state": {
+    "borrowAssetsUsd": 0,
+    "collateralAssetsUsd": 0,
+    "liquidityAssetsUsd": 5507.54141701996,
+    "price": "10630780000000000000000000000000000000000000000000",
+    "supplyAssetsUsd": 5507.541417019959,
+    "utilization": 0
+   },
+   "supplyingVaultV2s": [],
+   "supplyingVaults": []
+  },
+  {
+   "chain": {
+    "id": 1,
+    "network": "Ethereum"
+   },
+   "collateralAsset": {
+    "address": "0xa0769f7A8fC65e47dE93797b4e21C073c117Fc80",
+    "decimals": 5,
+    "symbol": "EUTBL"
+   },
+   "listed": false,
+   "lltv": "915000000000000000",
+   "loanAsset": {
+    "address": "0x5F7827FDeb7c20b443265Fc2F40845B715385Ff2",
+    "symbol": "EURCV"
+   },
+   "marketId": "0x664bce01b281e4596a51fb268e4fe4e13c98200ce9651d24458a4380c2b31280",
+   "oracle": {
+    "address": "0xf071b0a62ef2a54c1Dca791134421EE16c2C43d9",
+    "data": {
+     "__typename": "MorphoChainlinkOracleV2Data",
+     "baseFeedOne": {
+      "address": "0xfD628af590c4150A9651C1f4ddD0b4f532B703ae"
+     },
+     "baseFeedTwo": null,
+     "baseOracleVault": null,
+     "quoteFeedOne": null,
+     "quoteFeedTwo": null,
+     "scaleFactor": "10000000000000000000000000000000000000000000"
+    },
+    "type": "ChainlinkOracleV2"
+   },
+   "state": {
+    "borrowAssetsUsd": 0,
+    "collateralAssetsUsd": 0,
+    "liquidityAssetsUsd": 1.0997975453233342,
+    "price": "10630780000000000000000000000000000000000000000000",
+    "supplyAssetsUsd": 1.0997975453233342,
+    "utilization": 0
+   },
+   "supplyingVaultV2s": [],
+   "supplyingVaults": []
+  },
+  {
+   "chain": {
+    "id": 1,
+    "network": "Ethereum"
+   },
+   "collateralAsset": {
+    "address": "0x14d60E7FDC0D71d8611742720E4C50E7a974020c",
+    "decimals": 6,
+    "symbol": "USCC"
+   },
+   "listed": true,
+   "lltv": "915000000000000000",
+   "loanAsset": {
+    "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "symbol": "USDC"
+   },
+   "marketId": "0x1a9ccaca2dba9469cd9cba3d077466761b05f465c412d2bf2c71614c4963dd84",
+   "oracle": {
+    "address": "0x68066D2891254F1F3285Cac0bB16B65B28EE3cAb",
+    "data": {
+     "__typename": "MorphoChainlinkOracleV2Data",
+     "baseFeedOne": {
+      "address": "0xAfFd8F5578E8590665de561bdE9E7BAdb99300d9"
+     },
+     "baseFeedTwo": null,
+     "baseOracleVault": null,
+     "quoteFeedOne": null,
+     "quoteFeedTwo": null,
+     "scaleFactor": "1000000000000000000000000000000"
+    },
+    "type": "ChainlinkOracleV2"
+   },
+   "state": {
+    "borrowAssetsUsd": 1.0667349371015626,
+    "collateralAssetsUsd": 9.4630576,
+    "liquidityAssetsUsd": 0.1068489821841148,
+    "price": "11828822000000000000000000000000000000",
+    "supplyAssetsUsd": 1.1735839192856776,
+    "utilization": 0.9089549708135484
+   },
+   "supplyingVaultV2s": [
+    {
+     "address": "0xbeeff2C5bF38f90e3482a8b19F12E5a6D2FCa757",
+     "name": "Steakhouse High Yield USDC"
+    }
+   ],
+   "supplyingVaults": [
+    {
+     "address": "0xA8875aaeBc4f830524e35d57F9772FfAcbdD6C45",
+     "name": "Gauntlet USDC RWA"
+    },
+    {
+     "address": "0xBEeFFF209270748ddd194831b3fa287a5386f5bC",
+     "name": "Smokehouse USDC"
+    }
+   ]
+  },
+  {
+   "chain": {
+    "id": 1,
+    "network": "Ethereum"
+   },
+   "collateralAsset": {
+    "address": "0xaD55aebc9b8c03FC43cd9f62260391c13c23e7c0",
+    "decimals": 18,
+    "symbol": "cUSDO"
+   },
+   "listed": false,
+   "lltv": "915000000000000000",
+   "loanAsset": {
+    "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "symbol": "USDC"
+   },
+   "marketId": "0x15f30b939b8590be30aa22cd8d6367cf90a0ae460ce7f644ddbf58b8442e619a",
+   "oracle": {
+    "address": "0x26Be0B9fDAF2855428DEee155b195eE802144ACD",
+    "data": {
+     "__typename": "MorphoChainlinkOracleV2Data",
+     "baseFeedOne": null,
+     "baseFeedTwo": null,
+     "baseOracleVault": {
+      "address": "0xaD55aebc9b8c03FC43cd9f62260391c13c23e7c0"
+     },
+     "quoteFeedOne": null,
+     "quoteFeedTwo": null,
+     "scaleFactor": 1000000000000
+    },
+    "type": "ChainlinkOracleV2"
+   },
+   "state": {
+    "borrowAssetsUsd": 9.999343245500001e-06,
+    "collateralAssetsUsd": 1.0546303646183912,
+    "liquidityAssetsUsd": 0.012000211828924549,
+    "price": "1066995017935000000000000",
+    "supplyAssetsUsd": 0.01201021117217005,
+    "utilization": 0.000832570144034634
+   },
+   "supplyingVaultV2s": [],
+   "supplyingVaults": []
+  },
+  {
+   "chain": {
+    "id": 1,
+    "network": "Ethereum"
+   },
+   "collateralAsset": {
+    "address": "0x14d60E7FDC0D71d8611742720E4C50E7a974020c",
+    "decimals": 6,
+    "symbol": "USCC"
+   },
+   "listed": false,
+   "lltv": "965000000000000000",
+   "loanAsset": {
+    "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "symbol": "USDC"
+   },
+   "marketId": "0x0af7f7f961ccf778fcc40f0a43d2878cc595fd81203e1a9fea1b65266805cf32",
+   "oracle": {
+    "address": "0xC0D8DCD624dD8DacA93E719b83C071e2A632D9Da",
+    "data": {
+     "__typename": "MorphoChainlinkOracleV2Data",
+     "baseFeedOne": {
+      "address": "0xAfFd8F5578E8590665de561bdE9E7BAdb99300d9"
+     },
+     "baseFeedTwo": null,
+     "baseOracleVault": null,
+     "quoteFeedOne": null,
+     "quoteFeedTwo": null,
+     "scaleFactor": "1000000000000000000000000000000"
+    },
+    "type": "ChainlinkOracleV2"
+   },
+   "state": {
+    "borrowAssetsUsd": 0,
+    "collateralAssetsUsd": 0,
+    "liquidityAssetsUsd": 0,
+    "price": "11828822000000000000000000000000000000",
+    "supplyAssetsUsd": 0,
+    "utilization": 0
+   },
+   "supplyingVaultV2s": [],
+   "supplyingVaults": []
+  }
+ ],
+ "tokens": {
+  "EUTBL": "0xa0769f7A8fC65e47dE93797b4e21C073c117Fc80",
+  "TBILL": "0xdd50C053C096CB04A3e3362E2b622529EC5f2e8a",
+  "USCC": "0x14d60E7FDC0D71d8611742720E4C50E7a974020c",
+  "USDO": "0x8238884Ec9668Ef77B90C6dfF4D1a9F4F4823BFe",
+  "cUSDO": "0xaD55aebc9b8c03FC43cd9f62260391c13c23e7c0"
+ }
+}
