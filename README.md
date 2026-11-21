@@ -12,3 +12,7 @@ Rebuild every number, the memo, the article and the post offline from the saved 
     python3 scripts/build_all.py
 
 `scripts/fetch_*.py` re-read the data from the network (read-only calls). `scripts/make_summary.py` and `scripts/make_charts.py` draw the images and need Chrome and matplotlib.
+
+## License
+
+Code is MIT licensed. Text and data are CC BY 4.0.
