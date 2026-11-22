@@ -41,4 +41,4 @@ If both conditions held, I would cap a pilot at about $1 million and at most 1% 
 
 Every reading is one moment. The issuer was not asked about the burn or the BNB Chain mints. On Ethereum there are 11 holders besides the vault and one holds over half, so a market there would have one or two borrowers; I found no sign of demand to borrow against the token. The cause of the small downward NAV updates last year is unexplained, and a lender's legal claim on the fund is unresearched.
 
-Of 32 predictions written before pulling data, 19 held, 6 held in part and 7 did not. The most important miss was supply: predicted 25 to 150 million tokens, found about 17 million on Ethereum and about 254 million across all chains, including the XRP Ledger.
+Predictions are written down and scored, misses included. No hash was recorded and they entered git with the results. Of 32 predictions, 19 held, 6 held in part and 7 did not. The most important miss was supply: predicted 25 to 150 million tokens, found about 17 million on Ethereum and about 254 million across all chains, including the XRP Ledger.

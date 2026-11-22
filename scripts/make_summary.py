@@ -1,6 +1,6 @@
 """Summary image for the post, charts/summary.png (1080 x 1350, phone feed), in the series design.
 
-Pure SVG rendered by headless Chrome (same method, font and sizes as the Study 4 image). Every figure comes from
+Pure SVG rendered by headless Chrome (same method, font and sizes as the earlier summary images). Every figure comes from
 data/results.json, rounded as in post.md.   Run: python3 scripts/make_summary.py   (after build_all.py)
 """
 import json

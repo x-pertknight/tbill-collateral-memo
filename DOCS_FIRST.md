@@ -23,7 +23,7 @@ Result:
   USDO is a yield-bearing stablecoin with a bonus multiplier, not a T-bill share, so it answers a different question.
 - Tokenized treasury-type collateral that does appear in the top 50 (so excluded from the choice): EUTBL, USCC
   (and PRIME, mF-ONE, FLHYon, PST under other mandates). Not seen in the top 50: BUIDL, USTB, BENJI, USYC, OUSG, JTRSY.
-  Those were not checked further because TBILL, the first candidate in the brief, is absent.
+  Those were not checked further because TBILL, the first candidate considered, is absent.
 - Limits of this check: it covers 50 vaults, not every vault; a V2 vault that reaches a market only through a V1-vault adapter would show no collateral cap. The raw JSON is in `data/step0/`.
 
 ## 2. Documented (source in brackets; `docs` = `sources/docs/openeden_tbill_docs_2026-11-16.md`)
