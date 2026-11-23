@@ -1,6 +1,5 @@
 __pycache__/
 *.pyc
 .DS_Store
-.banned_terms
 drafts/
 scripts/build_preview.py

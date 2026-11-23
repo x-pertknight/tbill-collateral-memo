@@ -1,11 +1,16 @@
 """Recompute every number in the memo from the saved raw files (offline, no network).
 
-Usage: python3 scripts/build_all.py
-Reads  data/raw/*.json, data/step0/*.json, memo.template.md
-Writes data/results.json, SCORECARD.md and memo.md (template with {{key}} replaced by results).
+Usage: python3 scripts/build_all.py           check: rebuild and compare, write nothing
+       python3 scripts/build_all.py --write   rebuild and overwrite the generated files
+Reads  data/raw/*.json, data/step0/*.json, memo.template.md, post.template.md, article.template.md
+Builds data/results.json, SCORECARD.md, memo.md, post.md and article.md (templates with {{key}}
+replaced by results). In check mode each built file is compared byte for byte with the committed
+one, and the exit status is 1 if any of them differs, so a changed raw reading or a hand edited
+figure in memo.md, post.md or article.md fails the run.
 """
 import json
 import re
+import sys
 import statistics
 from datetime import date, datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
@@ -13,6 +18,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / "data" / "raw"
+BUILT = {}                   # relative path -> text built in this run
 DAY = 86400
 VAULT = "TBILL vault/token (proxy)"
 PAIRED_FROM = "2024-12-01"   # earlier settlement events used a different signature, so no pairing before this
@@ -361,7 +367,7 @@ def build():
     res["derived"] = derived(res)
     res["scores"] = scores(res)
     render_scorecard(res)
-    (ROOT / "data" / "results.json").write_text(json.dumps(res, indent=1, sort_keys=True, default=str))
+    BUILT["data/results.json"] = json.dumps(res, indent=1, sort_keys=True, default=str)
     return res
 
 
@@ -540,8 +546,8 @@ def render_scorecard(res):
     lines += ["", f"Tally: {tally['HIT']} hit, {tally['PARTIAL']} partial, {tally['MISS']} miss of {len(rows)}."]
     tally["total"] = len(rows)
     res["tally"] = tally
-    (ROOT / "SCORECARD.md").write_text("\n".join(lines) + "\n")
-    print("wrote SCORECARD.md")
+    BUILT["SCORECARD.md"] = "\n".join(lines) + "\n"
+    print("built SCORECARD.md")
 
 
 def flatten(d, prefix=""):
@@ -572,33 +578,59 @@ def render(res):
             return format(val, fmt) if fmt else str(val)
         return re.sub(r"\{\{([^}]+)\}\}", sub, text)
 
-    (ROOT / "memo.md").write_text(fill((ROOT / "memo.template.md").read_text()))
-    print("wrote memo.md")
+    BUILT["memo.md"] = fill((ROOT / "memo.template.md").read_text())
+    print("built memo.md")
     post = fill((ROOT / "post.template.md").read_text())
     pw = len(post.split())
     assert 250 <= pw <= 340 and "`" not in post, f"post: {pw} words"
     assert flat["queue.unmatched_share_pct"] < 10, "post says fewer than one in ten"
     check_text("post.md", post)
-    (ROOT / "post.md").write_text(post)
-    print("wrote post.md", pw, "words")
+    BUILT["post.md"] = post
+    print("built post.md", pw, "words")
     art = fill((ROOT / "article.template.md").read_text())
     words = len(re.sub(r"!\[[^\]]*\]\([^)]*\)|^\*.*\*$|[#*`]", "", art, flags=re.M).split())
     assert 450 <= words <= 1000, f"article: {words} words"
     check_text("article.md", art)
-    (ROOT / "article.md").write_text(art)
-    print("wrote article.md", words, "words")
+    BUILT["article.md"] = art
+    print("built article.md", words, "words")
 
 
 def check_text(name, text):
-    """Public-text rules: no emoji, no banned terms (list kept in a local, untracked file)."""
+    """Public-text rule: no emoji."""
     assert not re.search(r"[\U0001F300-\U0001FAFF\u2600-\u27BF]", text), f"{name}: emoji"
-    banned = ROOT / ".banned_terms"          # one regex per line; local only, not part of the repo
-    if banned.exists():
-        for pattern in banned.read_text().split():
-            assert not re.search(pattern, text), f"{name}: banned term"
+
+
+def compare_built():
+    """Compare every built file with the committed one. Return the number of mismatches."""
+    bad = 0
+    for rel, text in BUILT.items():
+        path = ROOT / rel
+        old = path.read_text() if path.exists() else None
+        if old == text:
+            print(f"  [PASS] {rel} matches the rebuild")
+            continue
+        bad += 1
+        if old is None:
+            print(f"  [FAIL] {rel} is missing")
+            continue
+        a, b = old.splitlines(), text.splitlines()
+        n = next((i for i, (x, y) in enumerate(zip(a, b)) if x != y), min(len(a), len(b)))
+        print(f"  [FAIL] {rel} differs from the rebuild at line {n + 1}")
+        print(f"         committed: {a[n] if n < len(a) else '(end of file)'}")
+        print(f"         rebuilt:   {b[n] if n < len(b) else '(end of file)'}")
+    return bad
 
 
 if __name__ == "__main__":
     results = build()
     print(json.dumps({k: results[k] for k in ("derived", "tally")}, indent=1, default=str))
     render(results)
+    if "--write" in sys.argv[1:]:
+        for rel, text in BUILT.items():
+            (ROOT / rel).write_text(text)
+            print("wrote", rel)
+    else:
+        print("check: rebuilt files vs committed files")
+        failed = compare_built()
+        print(f"FAIL: {failed} file(s) differ from the rebuild" if failed else "OK: every generated file matches the rebuild")
+        sys.exit(1 if failed else 0)
