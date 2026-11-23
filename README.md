@@ -15,6 +15,8 @@ To overwrite the generated files with the rebuild instead:
 
     python3 scripts/build_all.py --write
 
+Raw readings that feed no published number are not checked: the comparison covers the generated files, so a raw value that moves none of them passes.
+
 `scripts/fetch_*.py` re-read the data from the network (read-only calls). `scripts/make_summary.py` and `scripts/make_charts.py` draw the images and need Chrome and matplotlib.
 
 ## License
