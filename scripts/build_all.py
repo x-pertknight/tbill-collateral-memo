@@ -2,7 +2,8 @@
 
 Usage: python3 scripts/build_all.py           check: rebuild and compare, write nothing
        python3 scripts/build_all.py --write   rebuild and overwrite the generated files
-Reads  data/raw/*.json, memo.template.md, post.template.md, article.template.md
+Reads  data/raw/*.json except defillama_tbill_tvl.json and dexscreener_tbill_eth.json (saved for
+       reference, not read here), memo.template.md, post.template.md, article.template.md
 Builds data/results.json, SCORECARD.md, memo.md, post.md and article.md (templates with {{key}}
 replaced by results). In check mode each built file is compared byte for byte with the committed
 one, and the exit status is 1 if any of them differs, so a changed raw reading or a hand edited
@@ -623,6 +624,9 @@ def compare_built():
 
 
 if __name__ == "__main__":
+    unknown = [a for a in sys.argv[1:] if a != "--write"]
+    if unknown:
+        sys.exit(f"unknown argument(s): {' '.join(unknown)}; usage: build_all.py [--write]")
     results = build()
     print(json.dumps({k: results[k] for k in ("derived", "tally")}, indent=1, default=str))
     render(results)
