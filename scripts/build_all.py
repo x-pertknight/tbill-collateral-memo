@@ -2,7 +2,7 @@
 
 Usage: python3 scripts/build_all.py           check: rebuild and compare, write nothing
        python3 scripts/build_all.py --write   rebuild and overwrite the generated files
-Reads  data/raw/*.json, data/step0/*.json, memo.template.md, post.template.md, article.template.md
+Reads  data/raw/*.json, memo.template.md, post.template.md, article.template.md
 Builds data/results.json, SCORECARD.md, memo.md, post.md and article.md (templates with {{key}}
 replaced by results). In check mode each built file is compared byte for byte with the committed
 one, and the exit status is 1 if any of them differs, so a changed raw reading or a hand edited
@@ -605,7 +605,8 @@ def compare_built():
     bad = 0
     for rel, text in BUILT.items():
         path = ROOT / rel
-        old = path.read_text() if path.exists() else None
+        # Compare bytes, so a line ending change is a difference too (read_text would hide CRLF).
+        old = path.read_bytes().decode() if path.exists() else None
         if old == text:
             print(f"  [PASS] {rel} matches the rebuild")
             continue
@@ -627,7 +628,7 @@ if __name__ == "__main__":
     render(results)
     if "--write" in sys.argv[1:]:
         for rel, text in BUILT.items():
-            (ROOT / rel).write_text(text)
+            (ROOT / rel).write_bytes(text.encode())
             print("wrote", rel)
     else:
         print("check: rebuilt files vs committed files")
